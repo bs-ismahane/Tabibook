@@ -38,7 +38,7 @@ loginForm?.addEventListener("submit", async function (e) {
     let password = this.querySelector("input[type='password']").value;
 
     try {
-        let res = await fetch("http://localhost:5000/api/auth/login", {
+        let res = await fetch("https://320b-197-203-168-106.ngrok-free.app/api/auth/login", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({ email, password })
@@ -73,7 +73,7 @@ registerForm?.addEventListener("submit", async function (e) {
     let password = this.querySelector("input[type='password']").value;
     let role = roleToggle?.checked ? "patient" : "doctor";
     try {
-        let res = await fetch("http://localhost:5000/api/auth/register", {
+        let res = await fetch("https://320b-197-203-168-106.ngrok-free.app/api/auth/register", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({ name, email, password, role })
