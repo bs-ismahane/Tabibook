@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabibook</title>
+   <!-- google font -->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+   <!-- page icon -->
+   <link rel="shortcut icon" href="./images/logo.png" type="image/png">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <!-- normalise -->
+   <link rel="stylesheet" href="./css/normalize.css">
+   <!-- css -->
+   <link rel="stylesheet" href="./css/style.css">
+</head>
+<body class="login">
+    <div class="container">
+        <div class="form-box login">
+            <form action="">
+                <h1>Login</h1>
+                <div class="input-box">
+                    <input type="email" placeholder="email" required>
+                    <i class="fa-solid fa-user"></i>
+                </div>
+                <div class="input-box">
+                    <input type="password" placeholder="password" required>
+                    <i class="fa-solid fa-eye-slash"></i>
+                </div>
+                <div class="forget-link">
+                    <a href="#">Forget password?</a>
+                </div>
+                <button type="submit" class="btn">Login</button>
+                <p>or login with</p>
+                <div class="social-icon">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </form>
+        </div>
+        <div class="form-box register">
+            <form action="">
+                <h1>Register</h1>
+                <!-- Role Toggle -->
+                <div class="toggle-box">
+                    <span>doctor</span>
+                    <label class="switch">
+                        <input type="checkbox" id="roleToggle">
+                        <span class="slider round"></span>
+                    </label>
+                    <span>Patient</span>
+                </div>
+        
+                <div class="input-box">
+                    <input type="text" placeholder="userName" required>
+                    <i class="fa-solid fa-user"></i>
+                </div>
+                <div class="input-box">
+                    <input type="email" placeholder="email" required>
+                    <i class="fa-solid fa-envelope"></i>
+                </div>
+                <div class="input-box">
+                    <input type="password" placeholder="password" required>
+                    <i class="fa-solid fa-eye-slash"></i>
+                </div>
+                <button type="submit" class="btn">Register</button>
+                <p>or Register with</p>
+                <div class="social-icon">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </form>
+        </div>
+        <div class="toggel-box">
+            <div class="toggel-panel toggel-left">
+                <h1>Hello,welcome!</h1>
+                <p>Don't have an account?</p>
+                <button class="btn register-btn">Register</button>
+            </div>
+            <div class="toggel-panel toggel-right">
+                <h1>Welcome Back!</h1>
+                <p>Already have an account?</p>
+                <button class="btn login-btn">Login</button>
+            </div>
+        </div>
+    </div>
+    <script src="./js/login.js"></script>
+</body>
+</html>

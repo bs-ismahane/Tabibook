@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Tabibook</title>
+    <link rel="stylesheet" href="../css/doctor.css">
+</head>
+<body class="page paintent-screen">
+    <div class="sidebar">
+        <img src="../images/logo.png" alt="">
+        <ul>
+            <li>
+                <a href="../doctor.html">
+                    <i class="fa-regular fa-chart-bar fa-fw"></i>
+                    <span>DashBord</span>
+                </a>
+            </li>
+            <li>
+                <a href="./appoiment.html">
+                    <i class="fa-solid fa-bell fa-fw"></i>
+                    <span>Appointments</span>
+                </a>
+            </li>
+            <li>
+                <a href="./Patients.html" class="active">
+                    <i class="fa-solid fa-hospital-user fa-fw"></i>
+                    <span>Patients</span>
+                </a>
+            </li>
+            <li>
+                <a href="./profile.html">
+                    <i class="fa-regular fa-circle-user fa-fw"></i>
+                    <span>Profile</span>
+                </a>
+            </li>
+            <li>
+                <a href="./settings.html">
+                    <i class="fa-solid fa-gear fa-fw"></i>
+                    <span>Settings</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <main>
+        <div class="head">
+            <div class="search">
+                <input type="search" placeholder="Type A Keyword" name="search">
+            </div>
+            <div class="icons">
+                <span class="notification">
+                    <i class="fa-regular fa-bell fa-lg"></i>
+                </span>
+                <img src="../images/avatar.png" alt="">
+            </div>
+        </div>
+        <div class="content">
+            <div class="paintentList-header">
+                <h1>Patient List</h1>
+                <div class="search-filter">
+                    <select class="filter-select">
+                        <option value="all">All Patients</option>
+                        <option value="diabetes">Diabetes</option>
+                        <option value="hypertension">Hypertension</option>
+                        <option value="cardiac">Cardiac</option>
+                    </select>
+                    <button class="add-patient-btn">
+                        <i class="fas fa-plus"></i>
+                        <span>Add Patient</span>
+                    </button>
+                </div>
+            </div>
+            <div class="paintentList">
+                <div class="card" data-condition="diabetes">
+                    <img src="../images/avatar.png" alt="Patient avatar">
+                    <div class="card-content">
+                        <h2>John Doe</h2>
+                        <p>Primary care visit scheduled</p>
+                        <div class="patient-details">
+                            <h4>25 years | Male</h4>
+                            <span>02/04/2025</span>
+                        </div>
+                        <div class="patient-status">
+                            <span class="condition-tag">Diabetes</span>
+                        </div>
+                    </div>
+                    <button class="view-btn">View</button>
+                </div>
+                <div class="card" data-condition="hypertension">
+                    <img src="../images/avatar.png" alt="Patient avatar">
+                    <div class="card-content">
+                        <h2>Jane Smith</h2>
+                        <p>Follow-up appointment needed</p>
+                        <div class="patient-details">
+                            <h4>34 years | Female</h4>
+                            <span>03/04/2025</span>
+                        </div>
+                        <div class="patient-status">
+                            <span class="condition-tag">Hypertension</span>
+                        </div>
+                    </div>
+                    <button class="view-btn">View</button>
+                </div>
+                <div class="card" data-condition="diabetes">
+                    <img src="../images/avatar.png" alt="Patient avatar">
+                    <div class="card-content">
+                        <h2>John Doe</h2>
+                        <p>Primary care visit scheduled</p>
+                        <div class="patient-details">
+                            <h4>25 years | Male</h4>
+                            <span>02/04/2025</span>
+                        </div>
+                        <div class="patient-status">
+                            <span class="condition-tag">Diabetes</span>
+                        </div>
+                    </div>
+                    <button class="view-btn">View</button>
+                </div>
+                <div class="card" data-condition="hypertension">
+                    <img src="../images/avatar.png" alt="Patient avatar">
+                    <div class="card-content">
+                        <h2>Jane Smith</h2>
+                        <p>Follow-up appointment needed</p>
+                        <div class="patient-details">
+                            <h4>34 years | Female</h4>
+                            <span>03/04/2025</span>
+                        </div>
+                        <div class="patient-status">
+                            <span class="condition-tag">Hypertension</span>
+                        </div>
+                    </div>
+                    <button class="view-btn">View</button>
+                </div>
+                <div class="card" data-condition="diabetes">
+                    <img src="../images/avatar.png" alt="Patient avatar">
+                    <div class="card-content">
+                        <h2>John Doe</h2>
+                        <p>Primary care visit scheduled</p>
+                        <div class="patient-details">
+                            <h4>25 years | Male</h4>
+                            <span>02/04/2025</span>
+                        </div>
+                        <div class="patient-status">
+                            <span class="condition-tag">Diabetes</span>
+                        </div>
+                    </div>
+                    <button class="view-btn">View</button>
+                </div>
+                <div class="card" data-condition="hypertension">
+                    <img src="../images/avatar.png" alt="Patient avatar">
+                    <div class="card-content">
+                        <h2>Jane Smith</h2>
+                        <p>Follow-up appointment needed</p>
+                        <div class="patient-details">
+                            <h4>34 years | Female</h4>
+                            <span>03/04/2025</span>
+                        </div>
+                        <div class="patient-status">
+                            <span class="condition-tag">Hypertension</span>
+                        </div>
+                    </div>
+                    <button class="view-btn">View</button>
+                </div>
+                <div class="card" data-condition="diabetes">
+                    <img src="../images/avatar.png" alt="Patient avatar">
+                    <div class="card-content">
+                        <h2>John Doe</h2>
+                        <p>Primary care visit scheduled</p>
+                        <div class="patient-details">
+                            <h4>25 years | Male</h4>
+                            <span>02/04/2025</span>
+                        </div>
+                        <div class="patient-status">
+                            <span class="condition-tag">Diabetes</span>
+                        </div>
+                    </div>
+                    <button class="view-btn">View</button>
+                </div>
+                <div class="card" data-condition="hypertension">
+                    <img src="../images/avatar.png" alt="Patient avatar">
+                    <div class="card-content">
+                        <h2>Jane Smith</h2>
+                        <p>Follow-up appointment needed</p>
+                        <div class="patient-details">
+                            <h4>34 years | Female</h4>
+                            <span>03/04/2025</span>
+                        </div>
+                        <div class="patient-status">
+                            <span class="condition-tag">Hypertension</span>
+                        </div>
+                    </div>
+                    <button class="view-btn">View</button>
+                </div>
+                <div class="card" data-condition="diabetes">
+                    <img src="../images/avatar.png" alt="Patient avatar">
+                    <div class="card-content">
+                        <h2>John Doe</h2>
+                        <p>Primary care visit scheduled</p>
+                        <div class="patient-details">
+                            <h4>25 years | Male</h4>
+                            <span>02/04/2025</span>
+                        </div>
+                        <div class="patient-status">
+                            <span class="condition-tag">Diabetes</span>
+                        </div>
+                    </div>
+                    <button class="view-btn">View</button>
+                </div>
+                <div class="card" data-condition="hypertension">
+                    <img src="../images/avatar.png" alt="Patient avatar">
+                    <div class="card-content">
+                        <h2>Jane Smith</h2>
+                        <p>Follow-up appointment needed</p>
+                        <div class="patient-details">
+                            <h4>34 years | Female</h4>
+                            <span>03/04/2025</span>
+                        </div>
+                        <div class="patient-status">
+                            <span class="condition-tag">Hypertension</span>
+                        </div>
+                    </div>
+                    <button class="view-btn">View</button>
+                </div>
+                <div class="card" data-condition="diabetes">
+                    <img src="../images/avatar.png" alt="Patient avatar">
+                    <div class="card-content">
+                        <h2>John Doe</h2>
+                        <p>Primary care visit scheduled</p>
+                        <div class="patient-details">
+                            <h4>25 years | Male</h4>
+                            <span>02/04/2025</span>
+                        </div>
+                        <div class="patient-status">
+                            <span class="condition-tag">Diabetes</span>
+                        </div>
+                    </div>
+                    <button class="view-btn">View</button>
+                </div>
+                <div class="card" data-condition="hypertension">
+                    <img src="../images/avatar.png" alt="Patient avatar">
+                    <div class="card-content">
+                        <h2>Jane Smith</h2>
+                        <p>Follow-up appointment needed</p>
+                        <div class="patient-details">
+                            <h4>34 years | Female</h4>
+                            <span>03/04/2025</span>
+                        </div>
+                        <div class="patient-status">
+                            <span class="condition-tag">Hypertension</span>
+                        </div>
+                    </div>
+                    <button class="view-btn">View</button>
+                </div>
+                <div class="card" data-condition="diabetes">
+                    <img src="../images/avatar.png" alt="Patient avatar">
+                    <div class="card-content">
+                        <h2>John Doe</h2>
+                        <p>Primary care visit scheduled</p>
+                        <div class="patient-details">
+                            <h4>25 years | Male</h4>
+                            <span>02/04/2025</span>
+                        </div>
+                        <div class="patient-status">
+                            <span class="condition-tag">Diabetes</span>
+                        </div>
+                    </div>
+                    <button class="view-btn">View</button>
+                </div>
+                <div class="card" data-condition="hypertension">
+                    <img src="../images/avatar.png" alt="Patient avatar">
+                    <div class="card-content">
+                        <h2>Jane Smith</h2>
+                        <p>Follow-up appointment needed</p>
+                        <div class="patient-details">
+                            <h4>34 years | Female</h4>
+                            <span>03/04/2025</span>
+                        </div>
+                        <div class="patient-status">
+                            <span class="condition-tag">Hypertension</span>
+                        </div>
+                    </div>
+                    <button class="view-btn">View</button>
+                </div>
+                <div class="card" data-condition="diabetes">
+                    <img src="../images/avatar.png" alt="Patient avatar">
+                    <div class="card-content">
+                        <h2>John Doe</h2>
+                        <p>Primary care visit scheduled</p>
+                        <div class="patient-details">
+                            <h4>25 years | Male</h4>
+                            <span>02/04/2025</span>
+                        </div>
+                        <div class="patient-status">
+                            <span class="condition-tag">Diabetes</span>
+                        </div>
+                    </div>
+                    <button class="view-btn">View</button>
+                </div>
+                <div class="card" data-condition="hypertension">
+                    <img src="../images/avatar.png" alt="Patient avatar">
+                    <div class="card-content">
+                        <h2>Jane Smith</h2>
+                        <p>Follow-up appointment needed</p>
+                        <div class="patient-details">
+                            <h4>34 years | Female</h4>
+                            <span>03/04/2025</span>
+                        </div>
+                        <div class="patient-status">
+                            <span class="condition-tag">Hypertension</span>
+                        </div>
+                    </div>
+                    <button class="view-btn">View</button>
+                </div>
+                <div class="card" data-condition="diabetes">
+                    <img src="../images/avatar.png" alt="Patient avatar">
+                    <div class="card-content">
+                        <h2>John Doe</h2>
+                        <p>Primary care visit scheduled</p>
+                        <div class="patient-details">
+                            <h4>25 years | Male</h4>
+                            <span>02/04/2025</span>
+                        </div>
+                        <div class="patient-status">
+                            <span class="condition-tag">Diabetes</span>
+                        </div>
+                    </div>
+                    <button class="view-btn">View</button>
+                </div>
+                <div class="card" data-condition="hypertension">
+                    <img src="../images/avatar.png" alt="Patient avatar">
+                    <div class="card-content">
+                        <h2>Jane Smith</h2>
+                        <p>Follow-up appointment needed</p>
+                        <div class="patient-details">
+                            <h4>34 years | Female</h4>
+                            <span>03/04/2025</span>
+                        </div>
+                        <div class="patient-status">
+                            <span class="condition-tag">Hypertension</span>
+                        </div>
+                    </div>
+                    <button class="view-btn">View</button>
+                </div>
+                <div class="card" data-condition="diabetes">
+                    <img src="../images/avatar.png" alt="Patient avatar">
+                    <div class="card-content">
+                        <h2>John Doe</h2>
+                        <p>Primary care visit scheduled</p>
+                        <div class="patient-details">
+                            <h4>25 years | Male</h4>
+                            <span>02/04/2025</span>
+                        </div>
+                        <div class="patient-status">
+                            <span class="condition-tag">Diabetes</span>
+                        </div>
+                    </div>
+                    <button class="view-btn">View</button>
+                </div>
+                <div class="card" data-condition="hypertension">
+                    <img src="../images/avatar.png" alt="Patient avatar">
+                    <div class="card-content">
+                        <h2>Jane Smith</h2>
+                        <p>Follow-up appointment needed</p>
+                        <div class="patient-details">
+                            <h4>34 years | Female</h4>
+                            <span>03/04/2025</span>
+                        </div>
+                        <div class="patient-status">
+                            <span class="condition-tag">Hypertension</span>
+                        </div>
+                    </div>
+                    <button class="view-btn">View</button>
+                </div>
+                <div class="card" data-condition="diabetes">
+                    <img src="../images/avatar.png" alt="Patient avatar">
+                    <div class="card-content">
+                        <h2>John Doe</h2>
+                        <p>Primary care visit scheduled</p>
+                        <div class="patient-details">
+                            <h4>25 years | Male</h4>
+                            <span>02/04/2025</span>
+                        </div>
+                        <div class="patient-status">
+                            <span class="condition-tag">Diabetes</span>
+                        </div>
+                    </div>
+                    <button class="view-btn">View</button>
+                </div>
+                <div class="card" data-condition="hypertension">
+                    <img src="../images/avatar.png" alt="Patient avatar">
+                    <div class="card-content">
+                        <h2>Jane Smith</h2>
+                        <p>Follow-up appointment needed</p>
+                        <div class="patient-details">
+                            <h4>34 years | Female</h4>
+                            <span>03/04/2025</span>
+                        </div>
+                        <div class="patient-status">
+                            <span class="condition-tag">Hypertension</span>
+                        </div>
+                    </div>
+                    <button class="view-btn">View</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- Add Patient Modal -->
+<div class="modal-overlay" id="addPatientModal">
+    <div class="modal-container">
+        <div class="modal-header">
+            <h2>Add New Patient</h2>
+            <button class="close-modal">&times;</button>
+        </div>
+        <div class="modal-body">
+            <form id="patientForm">
+                <div class="form-group">
+                    <label for="patientName">Full Name</label>
+                    <input type="text" id="patientName" placeholder="Enter patient's full name" required>
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="patientAge">Age</label>
+                        <input type="number" id="patientAge" placeholder="Age" min="0" max="120" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="patientGender">Gender</label>
+                        <select id="patientGender" required>
+                            <option value="">Select</option>
+                            <option value="Male">Male</option>
+                            <option value="Female">Female</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="patientCondition">Primary Condition</label>
+                    <select id="patientCondition" required>
+                        <option value="">Select condition</option>
+                        <option value="diabetes">Diabetes</option>
+                        <option value="hypertension">Hypertension</option>
+                        <option value="cardiac">Cardiac</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="patientStatus">Status</label>
+                    <select id="patientStatus" required>
+                        <option value="routine">Routine</option>
+                        <option value="urgent">Urgent</option>
+                        <option value="critical">Critical</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="patientNotes">Notes</label>
+                    <textarea id="patientNotes" placeholder="Additional notes about the patient"></textarea>
+                </div>
+                
+                <div class="form-actions">
+                    <button type="button" class="cancel-btn">Cancel</button>
+                    <button type="submit" class="submit-btn">Add Patient</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+    <script src="../js/Patients.js"></script>
+</body>
+</html>

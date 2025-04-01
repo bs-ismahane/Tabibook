@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabibook</title>
+    <meta name="title" content="Tabibook - Online Reservation">
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <!-- page icon -->
+    <link rel="shortcut icon" href="./images/logo.png" type="image/png">
+    <!--  -->
+    <link rel="preload" as="image" href="./images/image1.jpg"> 
+    <link rel="preload" as="image" href="./images/image2.jpg">
+    <link rel="preload" as="image" href="./images/image3.jpg"> 
+    <!-- icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- normalise -->
+    <link rel="stylesheet" href="./css/normalize.css">
+    <!-- css -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <!-- preloader -->
+    <div class="preload" data-preload>
+        <div class="circle">
+
+        </div>
+        <p class="text">Tabibook</p>
+    </div>
+    <header>
+        <div class="topbar container">
+            <a href="tel:" class="phone">
+                <i class="fa-solid fa-phone-volume"></i>
+                <span>Call Us:+213 124 56 78 89</span>
+            </a>
+            <ul class="socialMedia">
+                <li>
+                    <a href="#">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa-brands fa-x-twitter"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <nav class="container">
+            <a href="#" class="logo">
+                <img src="./images/logo.png" alt="">
+            </a>
+            <button class="nav-btn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./services.html">Services</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+                <li><a href="./login.html">Log in</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <button class="prev">
+                <i class="fa-solid fa-angle-left"></i>
+            </button>
+            <button class="next">
+                <i class="fa-solid fa-angle-right"></i>
+            </button>    
+            <div class="text">
+                <h1>take your appointment is online now</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet id, debitis consectetur omnis fugit dignissimos quod voluptatibus, quae architecto recusandae voluptatem eum, eius placeat earum fuga iste deleniti et fugiat nihil sapiente inventore aliquid at incidunt hic. Enim officia accusantium animi accusamus explicabo impedit asperiores beatae, harum molestiae hic laboriosam!</p>
+                <button>Book an appointment</button>
+            </div>
+        </section>
+        <section class="features">
+            <div class="features-item">
+                <i class="fa-solid fa-stethoscope"></i>
+                <div class="info">
+                    <h3>Our Doctors</h3>
+                    <p>Once the family has reached a decision, the team informs the relevant parties.</p>
+                    <a href="">+ FIND A DOCTOR</a>
+                </div>
+            </div>
+            <div class="features-item">
+                <i class="fa-solid fa-notes-medical"></i>
+                <div class="info">
+                    <h3>Health Foundation</h3>
+                    <p>Medical professionals team is trained to provide you with the care and support.</p>
+                    <a href="">+ View all departments</a>
+                </div>
+            </div>
+            <div class="features-item">
+                <i class="fa-solid fa-house-medical"></i>
+                <div class="info">
+                    <h3>24/7 Services</h3>
+                    <p>Emergency staff who are available 24 hours a day, seven days a week.</p>
+                    <a href="">+ CONTACT US</a>
+                </div>
+            </div>
+        </section>
+        <section class="aboutUs container">
+            <img src="./images/aboutUs.png" alt="">
+            <div class="text">
+                <span><i class="fa-solid fa-heart-pulse"></i>ABOUT US</span>
+                <h2>Welcome To Tabibook</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta alias ratione culpa, eius necessitatibus cupiditate adipisci aperiam beatae dignissimos impedit officia deserunt in magnam fugiat.</p>
+                <div>
+                <ul>
+                    <li>
+                        <i class="fa-solid fa-circle-check"></i>
+                        Multi Speciality Hospital
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-circle-check"></i>
+                        Professional Experts
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-circle-check"></i>
+                        24 Hours Medical Service
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-circle-check"></i>
+                        20+ years of excellence
+                    </li>
+                </ul>
+                <a href="#">Book An Appointment</a>
+                </div>
+            </div>
+        </section>
+        <section class="services container">
+            <span>
+                <i class="fa-solid fa-heart-pulse"></i>
+                departments
+            </span>
+            <div class="title">
+                <h2>Explore Our Services</h2>
+                <a href="#">VIEW ALL SERVICES</a>
+            </div>
+            <div class="cards">
+                <div class="card">
+                    <img src="./images/services/Cardiologist.jpg" alt="">
+                    <h3>Cardiologist</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti nesciunt nam quae labore architecto et repellendus deserunt provident accusantium voluptas?</p>
+                    <a href="">+ Readmore</a>
+                </div>
+                <div class="card">
+                    <img src="./images/services/Pulmonary.jpg" alt="">
+                    <h3>Pulmonary</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti nesciunt nam quae labore architecto et repellendus deserunt provident accusantium voluptas?</p>
+                    <a href="">+ Readmore</a>
+                </div>
+                <div class="card">
+                    <img src="./images/services/Radiology.jpg" alt="">
+                    <h3>Radiology</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti nesciunt nam quae labore architecto et repellendus deserunt provident accusantium voluptas?</p>
+                    <a href="">+ Readmore</a>
+                </div>
+                <div class="card">
+                    <img src="./images/services/Urology.jpg" alt="">
+                    <h3>Urology</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti nesciunt nam quae labore architecto et repellendus deserunt provident accusantium voluptas?</p>
+                    <a href="">+ Readmore</a>
+                </div>
+                <div class="card">
+                    <img src="./images/services/Neurology.jpg" alt="">
+                    <h3>Neurology</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti nesciunt nam quae labore architecto et repellendus deserunt provident accusantium voluptas?</p>
+                    <a href="">+ Readmore</a>
+                </div>
+                <div class="card">
+                    <img src="./images/services/Gastroenterologist.jpg" alt="">
+                    <h3>Gastroenterologist</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti nesciunt nam quae labore architecto et repellendus deserunt provident accusantium voluptas?</p>
+                    <a href="">+ Readmore</a>
+                </div>
+            </div>
+        </section>
+        <section class="benefits container">
+            <div class="title">
+                <span><i class="fa-solid fa-heart-pulse"></i> BENEFITS OF CONSULTATION</span>
+                <h2>Consult The Best Doctor In The Department</h2>
+                <p>Doctor are choosing from our diverse pool of health specialists. Discover better health & wellness by using our doctor ratings & reviews to make your choice.</p>
+            </div>
+            <ul>
+                <li>
+                    <i class="fa-solid fa-headphones"></i>
+                    <span>Consult Top Doctors 24x7</span>
+                    <a href="#"><i class="fa-solid fa-angle-right"></i></a>
+                </li>
+                <li>
+                    <i class="fa-solid fa-shield"></i>
+                    <span>Quality & Patient Safety</span>
+                    <a href="#"><i class="fa-solid fa-angle-right"></i></a>
+                </li>
+                <li>
+                    <i class="fa-solid fa-dna"></i>
+                    <span>Perfect Health Essentials</span>
+                    <a href="#"><i class="fa-solid fa-angle-right"></i></a>
+                </li>
+            </ul>
+        </section>
+        <section class="counter container">
+            <div>
+                <div><i class="fa-solid fa-user"></i></div>
+                <h3>1.5 Crore+</h3>
+                <span>Satisfied Patients</span>
+            </div>
+            <div>
+                <div><i class="fa-solid fa-calendar-check"></i></div>
+                <h3>2 Million+</h3>
+                <span>Doctor Appointments</span>
+            </div>
+            <div>
+                <div><i class="fa-solid fa-certificate"></i></div>
+                <h3>200,000+</h3>
+                <span>Certified Experts</span>
+            </div>
+        </section>
+        <section class="container testimonials">
+            <span><i class="fa-solid fa-heart-pulse"></i> testimonials</span>
+            <div class="title">
+                <h2>What Our Patient Says</h2>
+                <div>
+                    <button id="left-btn"><i class="fa-solid fa-angle-left"></i></button>
+                    <button id="right-btn"><i class="fa-solid fa-angle-right"></i></button>
+                </div>
+            </div>
+            <div class="reviews-container">
+                <div class="reviews">
+                    <div class="review">
+                        <i class="fa-solid fa-quote-left"></i>
+                        <p>“I wish the world could know the wonderful things that are happening on the Doctorate hospital, who have had an injury that cured soon. ”</p>
+                        <div class="personne">
+                            <img src="./images/personne/3.jpg" alt="">
+                            <div class="info">
+                                <div class="star">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star-half-stroke"></i>
+                                </div>
+                                <h3>Mark Brown</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review">
+                        <i class="fa-solid fa-quote-left"></i>
+                        <p>“I wish the world could know the wonderful things that are happening on the Doctorate hospital, who have had an injury that cured soon. ”</p>
+                        <div class="personne">
+                            <img src="./images/personne/4.jpg" alt="">
+                            <div class="info">
+                                <div class="star">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star-half-stroke"></i>
+                                </div>
+                                <h3>Mark Brown</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review">
+                        <i class="fa-solid fa-quote-left"></i>
+                        <p>“I wish the world could know the wonderful things that are happening on the Doctorate hospital, who have had an injury that cured soon. ”</p>
+                        <div class="personne">
+                            <img src="./images/personne/5.jpg" alt="">
+                            <div class="info">
+                                <div class="star">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star-half-stroke"></i>
+                                </div>
+                                <h3>Mark Brown</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review">
+                        <i class="fa-solid fa-quote-left"></i>
+                        <p>“I wish the world could know the wonderful things that are happening on the Doctorate hospital, who have had an injury that cured soon. ”</p>
+                        <div class="personne">
+                            <img src="./images/personne/6.jpg" alt="">
+                            <div class="info">
+                                <div class="star">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star-half-stroke"></i>
+                                </div>
+                                <h3>Mark Brown</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review">
+                        <i class="fa-solid fa-quote-left"></i>
+                        <p>“I wish the world could know the wonderful things that are happening on the Doctorate hospital, who have had an injury that cured soon. ”</p>
+                        <div class="personne">
+                            <img src="./images/personne/1.jpg" alt="">
+                            <div class="info">
+                                <div class="star">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star-half-stroke"></i>
+                                </div>
+                                <h3>Mark Brown</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review">
+                        <i class="fa-solid fa-quote-left"></i>
+                        <p>“I wish the world could know the wonderful things that are happening on the Doctorate hospital, who have had an injury that cured soon. ”</p>
+                        <div class="personne">
+                            <img src="./images/personne/2.jpg" alt="">
+                            <div class="info">
+                                <div class="star">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star-half-stroke"></i>
+                                </div>
+                                <h3>Mark Brown</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review">
+                        <i class="fa-solid fa-quote-left"></i>
+                        <p>“I wish the world could know the wonderful things that are happening on the Doctorate hospital, who have had an injury that cured soon. ”</p>
+                        <div class="personne">
+                            <img src="./images/personne/7.jpg" alt="">
+                            <div class="info">
+                                <div class="star">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star-half-stroke"></i>
+                                </div>
+                                <h3>Mark Brown</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review">
+                        <i class="fa-solid fa-quote-left"></i>
+                        <p>“I wish the world could know the wonderful things that are happening on the Doctorate hospital, who have had an injury that cured soon. ”</p>
+                        <div class="personne">
+                            <img src="./images/personne/7.jpg" alt="">
+                            <div class="info">
+                                <div class="star">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star-half-stroke"></i>
+                                </div>
+                                <h3>Mark Brown</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review">
+                        <i class="fa-solid fa-quote-left"></i>
+                        <p>“I wish the world could know the wonderful things that are happening on the Doctorate hospital, who have had an injury that cured soon. ”</p>
+                        <div class="personne">
+                            <img src="./images/personne/5.jpg" alt="">
+                            <div class="info">
+                                <div class="star">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star-half-stroke"></i>
+                                </div>
+                                <h3>Mark Brown</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review">
+                        <i class="fa-solid fa-quote-left"></i>
+                        <p>“I wish the world could know the wonderful things that are happening on the Doctorate hospital, who have had an injury that cured soon. ”</p>
+                        <div class="personne">
+                            <img src="./images/personne/2.jpg" alt="">
+                            <div class="info">
+                                <div class="star">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star-half-stroke"></i>
+                                </div>
+                                <h3>Mark Brown</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review">
+                        <i class="fa-solid fa-quote-left"></i>
+                        <p>“I wish the world could know the wonderful things that are happening on the Doctorate hospital, who have had an injury that cured soon. ”</p>
+                        <div class="personne">
+                            <img src="./images/personne/2.jpg" alt="">
+                            <div class="info">
+                                <div class="star">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star-half-stroke"></i>
+                                </div>
+                                <h3>Mark Brown</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review">
+                        <i class="fa-solid fa-quote-left"></i>
+                        <p>“I wish the world could know the wonderful things that are happening on the Doctorate hospital, who have had an injury that cured soon. ”</p>
+                        <div class="personne">
+                            <img src="./images/personne/1.jpg" alt="">
+                            <div class="info">
+                                <div class="star">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star-half-stroke"></i>
+                                </div>
+                                <h3>Mark Brown</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="container">
+        <img src="./images/logo.png" alt="">
+        <div class="socialMedia">
+            <div class="title">
+                <i class="fa-solid fa-heart-pulse"></i>
+                <h2>Social Media</h2>
+            </div>
+            <ul class="socialMedia">
+                <li>
+                    <a href="#">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa-brands fa-x-twitter"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="contact">
+            <div class="title">
+                <i class="fa-solid fa-heart-pulse"></i>
+                <h2>Contact</h2>
+            </div>
+            <ul>
+                <li><i class="fa-solid fa-location-dot"></i>sidi bel abbes</li>
+                <li><i class="fa-solid fa-envelope"></i>abc@gmail.com</li>
+                <li><i class="fa-solid fa-phone-volume"></i>+213 123 45 67 89</li>
+            </ul>
+        </div>
+        <div>
+            <div class="title">
+                <i class="fa-solid fa-heart-pulse"></i>
+                <h2>Book an appointment</h2>
+            </div>
+            <p>Lorem, ipsum dolor qui. omnis ipsa repudiandae tenetur culpa!</p>
+            <a href="#">Book an appointment</a>
+        </div>
+    </footer>
+    <script src="./js/nav.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

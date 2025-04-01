@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile | Tabibook</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="../css/doctor.css">
+</head>
+<body class="profile-page page">
+    <div class="sidebar">
+        <img src="../images/logo.png" alt="Tabibook Logo">
+        <ul>
+            <li>
+                <a href="../doctor.html">
+                    <i class="fa-regular fa-chart-bar"></i>
+                    <span>Dashboard</span>
+                </a>
+            </li>
+            <li><a href="./appoiment.html"><i class="fa-solid fa-bell"></i><span>Appointments</span></a></li>
+            <li><a href="./Patients.html"><i class="fa-solid fa-hospital-user"></i><span>Patients</span></a></li>
+            <li><a href="./profile.html" class="active"><i class="fa-regular fa-circle-user"></i><span>Profile</span></a></li>
+            <li><a href="./settings.html"><i class="fa-solid fa-gear"></i><span>Settings</span></a></li>
+        </ul>
+    </div>
+    
+    <main>
+        <div class="head">
+            <div class="search">
+                <input type="search" placeholder="Type A Keyword" name="search">
+            </div>
+            <div class="icons">
+                <span class="notification">
+                    <i class="fa-regular fa-bell fa-lg"></i>
+                </span>
+                <img src="../images/avatar.png" alt="">
+            </div>
+        </div>
+        <div class="content">
+            <div class="profile-header">
+                <h1>My Profile</h1>
+                <button>
+                    <i class="fas fa-edit"></i>
+                    <span>Edit Profile</span>
+                </button>
+            </div>
+            
+            <div class="profile-container">
+                <div class="profile-card">
+                    <img src="../images/avatar.png" alt="">
+                    <div class="title">
+                        <h2>Lorem ipsum</h2>
+                        <p>Cardiologist</p>
+                    </div>
+                    <div class="contact">
+                       <div>
+                            <i class="fa-solid fa-envelope"></i>
+                            <span>isma@gmail.com</span>
+                       </div>
+                       <div>
+                            <i class="fa-solid fa-phone-volume"></i>
+                            <span>(+213) 754 12 45 89</span>
+                        </div>
+                    </div>
+                    <button>
+                        <i class="fas fa-check-circle"></i>
+                        <span>Profile Verified</span>
+                    </button>
+                </div>
+                <div class="profile-details">
+                        <h2>Professional Details</h2>
+                        <div>
+                            <h3>License Number</h3>
+                            <span>MD-1234567</span>
+                        </div>
+                        <div>
+                            <h3>License Expiry</h3>
+                            <span>June 15, 2025</span>
+                        </div>
+                        <div>
+                            <h3>Tax ID</h3>
+                            <span>45-1234567</span>
+                        </div>
+                        <div>
+                            <h3>NPI Number</h3>
+                            <span>1234567890</span>
+                        </div>
+                </div>
+            </div>
+        </div>
+        
+    </main>
+    <!-- Edit Profile Modal -->
+<div class="modal-overlay" id="editProfileModal">
+    <div class="modal-container">
+        <div class="modal-header">
+            <h2>Edit Profile</h2>
+            <button class="close-modal">&times;</button>
+        </div>
+        <div class="modal-body">
+            <form id="profileForm">
+                <div class="form-group">
+                    <label for="profileName">Full Name</label>
+                    <input type="text" id="profileName" value="Lorem ipsum" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="profileSpecialty">Specialty</label>
+                    <input type="text" id="profileSpecialty" value="Cardiologist" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="profileEmail">Email</label>
+                    <input type="email" id="profileEmail" value="isma@gmail.com" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="profilePhone">Phone</label>
+                    <input type="tel" id="profilePhone" value="(+213) 754 12 45 89" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="profileLicense">License Number</label>
+                    <input type="text" id="profileLicense" value="MD-1234567" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="profileExpiry">License Expiry</label>
+                    <input type="date" id="profileExpiry" value="2025-06-15" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="profileTaxID">Tax ID</label>
+                    <input type="text" id="profileTaxID" value="45-1234567" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="profileNPI">NPI Number</label>
+                    <input type="text" id="profileNPI" value="1234567890" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="profilePhoto">Profile Photo</label>
+                    <input type="file" id="profilePhoto" accept="image/*">
+                    <small>Max file size: 2MB</small>
+                </div>
+                
+                <div class="form-actions">
+                    <button type="button" class="cancel-btn">Cancel</button>
+                    <button type="submit" class="submit-btn">Save Changes</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<script src="../js/profile.js"></script>
+</body>
+</html>

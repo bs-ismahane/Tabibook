@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Tabibook</title>
+    <link rel="stylesheet" href="../css/doctor.css">
+</head>
+<body class="page appoiment-calander">
+    <div class="sidebar">
+        <img src="../images/logo.png" alt="">
+        <ul>
+            <li>
+                <a href="../doctor.html">
+                    <i class="fa-regular fa-chart-bar fa-fw"></i>
+                    <span>DashBord</span>
+                </a>
+            </li>
+            <li>
+                <a href="./appoiment.html" class="active">
+                    <i class="fa-solid fa-bell fa-fw"></i>
+                    <span>Appointments</span>
+                </a>
+            </li>
+            <li>
+                <a href="./Patients.html">
+                    <i class="fa-solid fa-hospital-user fa-fw"></i>
+                    <span>Patients</span>
+                </a>
+            </li>
+            <li>
+                <a href="./profile.html">
+                    <i class="fa-regular fa-circle-user fa-fw"></i>
+                    <span>Profile</span>
+                </a>
+            </li>
+            <li>
+                <a href="./settings.html">
+                    <i class="fa-solid fa-gear fa-fw"></i>
+                    <span>Settings</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <main>
+        <div class="head">
+            <div class="search">
+                <input type="search" placeholder="Type A Keyword" name="search">
+            </div>
+            <div class="icons">
+                <span class="notification">
+                    <i class="fa-regular fa-bell fa-lg"></i>
+                </span>
+                <img src="../images/avatar.png" alt="">
+            </div>
+        </div>
+        <div class="content">
+            <div class="calendar">
+            <div class="date-range">
+                    <button class="nav-btn prev-btn">&lt;</button>
+                    <span class="current-month"></span>
+                    <button class="nav-btn next-btn">&gt;</button>
+                </div>
+                <ul class="days-list"></ul>
+            </div>
+            <div class="appointments-list">
+                <h2><i class="fa-solid fa-list"></i> Today's Appointments</h2>
+                <div class="appointment-cards">
+                        <!-- Appointment 1 -->
+                    <div class="appointment-card done">
+                            <div class="patient-info">
+                                <img src="../images/avatar.png" alt="Patient" class="patient-photo">
+                                <div class="patient-details">
+                                    <h3>John Doe</h3>
+                                    <p class="appointment-desc">Routine checkup and blood test</p>
+                                    <div class="appointment-time">
+                                        <i class="fa-regular fa-clock"></i>
+                                        <span>10:00 AM</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="status-badge done">
+                                <i class="fa-solid fa-check"></i>
+                                Done
+                            </div>
+                    </div>
+                        <!-- Appointment 2 -->
+                    <div class="appointment-card pending">
+                            <div class="patient-info">
+                                <img src="../images/avatar.png" alt="Patient" class="patient-photo">
+                                <div class="patient-details">
+                                    <h3>Sarah Smith</h3>
+                                    <p class="appointment-desc">Follow-up consultation</p>
+                                    <div class="appointment-time">
+                                        <i class="fa-regular fa-clock"></i>
+                                        <span>11:30 AM</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="status-badge pending">
+                                <i class="fa-solid fa-hourglass-half"></i>
+                                Pending
+                            </div>
+                    </div>
+                        <!-- Appointment 3 -->
+                    <div class="appointment-card">
+                            <div class="patient-info">
+                                <img src="../images/avatar.png" alt="Patient" class="patient-photo">
+                                <div class="patient-details">
+                                    <h3>Michael Johnson</h3>
+                                    <p class="appointment-desc">Vaccination appointment</p>
+                                    <div class="appointment-time">
+                                        <i class="fa-regular fa-clock"></i>
+                                        <span>02:15 PM</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="status-badge">
+                                <i class="fa-solid fa-hourglass-half"></i>
+                                Upcoming
+                            </div>
+                    </div>
+                        <!-- Appointment 1 -->
+                        <div class="appointment-card done">
+                            <div class="patient-info">
+                                <img src="../images/avatar.png" alt="Patient" class="patient-photo">
+                                <div class="patient-details">
+                                    <h3>John Doe</h3>
+                                    <p class="appointment-desc">Routine checkup and blood test</p>
+                                    <div class="appointment-time">
+                                        <i class="fa-regular fa-clock"></i>
+                                        <span>10:00 AM</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="status-badge done">
+                                <i class="fa-solid fa-check"></i>
+                                Done
+                            </div>
+                    </div>
+                        <!-- Appointment 2 -->
+                    <div class="appointment-card pending">
+                            <div class="patient-info">
+                                <img src="../images/avatar.png" alt="Patient" class="patient-photo">
+                                <div class="patient-details">
+                                    <h3>Sarah Smith</h3>
+                                    <p class="appointment-desc">Follow-up consultation</p>
+                                    <div class="appointment-time">
+                                        <i class="fa-regular fa-clock"></i>
+                                        <span>11:30 AM</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="status-badge pending">
+                                <i class="fa-solid fa-hourglass-half"></i>
+                                Pending
+                            </div>
+                    </div>
+                        <!-- Appointment 3 -->
+                    <div class="appointment-card">
+                            <div class="patient-info">
+                                <img src="../images/avatar.png" alt="Patient" class="patient-photo">
+                                <div class="patient-details">
+                                    <h3>Michael Johnson</h3>
+                                    <p class="appointment-desc">Vaccination appointment</p>
+                                    <div class="appointment-time">
+                                        <i class="fa-regular fa-clock"></i>
+                                        <span>02:15 PM</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="status-badge">
+                                <i class="fa-solid fa-hourglass-half"></i>
+                                Upcoming
+                            </div>
+                    </div>
+                        <!-- Appointment 1 -->
+                        <div class="appointment-card done">
+                            <div class="patient-info">
+                                <img src="../images/avatar.png" alt="Patient" class="patient-photo">
+                                <div class="patient-details">
+                                    <h3>John Doe</h3>
+                                    <p class="appointment-desc">Routine checkup and blood test</p>
+                                    <div class="appointment-time">
+                                        <i class="fa-regular fa-clock"></i>
+                                        <span>10:00 AM</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="status-badge done">
+                                <i class="fa-solid fa-check"></i>
+                                Done
+                            </div>
+                    </div>
+                        <!-- Appointment 2 -->
+                    <div class="appointment-card pending">
+                            <div class="patient-info">
+                                <img src="../images/avatar.png" alt="Patient" class="patient-photo">
+                                <div class="patient-details">
+                                    <h3>Sarah Smith</h3>
+                                    <p class="appointment-desc">Follow-up consultation</p>
+                                    <div class="appointment-time">
+                                        <i class="fa-regular fa-clock"></i>
+                                        <span>11:30 AM</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="status-badge pending">
+                                <i class="fa-solid fa-hourglass-half"></i>
+                                Pending
+                            </div>
+                    </div>
+                        <!-- Appointment 3 -->
+                    <div class="appointment-card">
+                            <div class="patient-info">
+                                <img src="../images/avatar.png" alt="Patient" class="patient-photo">
+                                <div class="patient-details">
+                                    <h3>Michael Johnson</h3>
+                                    <p class="appointment-desc">Vaccination appointment</p>
+                                    <div class="appointment-time">
+                                        <i class="fa-regular fa-clock"></i>
+                                        <span>02:15 PM</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="status-badge">
+                                <i class="fa-solid fa-hourglass-half"></i>
+                                Upcoming
+                            </div>
+                    </div>
+                </div> 
+            </div>
+        </div>
+    </main>
+    <script src="../js/calendar.js"></script>
+</body>
+</html>
