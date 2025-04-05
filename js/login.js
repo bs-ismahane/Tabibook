@@ -1,3 +1,5 @@
+import { API_BASE_URL } from './config.js';
+
 'use strict';
 const container = document.querySelector('.container');
 const registerBtn = document.querySelector(".register-btn");
@@ -38,7 +40,7 @@ loginForm?.addEventListener("submit", async function (e) {
     let password = this.querySelector("input[type='password']").value;
 
     try {
-        let res = await fetch("https://2d78-197-203-168-106.ngrok-free.app/api/auth/login", {
+        let res = await fetch("https://API_BASE_URL/api/auth/login", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({ email, password })
@@ -73,7 +75,7 @@ registerForm?.addEventListener("submit", async function (e) {
     let password = this.querySelector("input[type='password']").value;
     let role = roleToggle?.checked ? "patient" : "doctor";
     try {
-        let res = await fetch("https://2d78-197-203-168-106.ngrok-free.app/api/auth/register", {
+        let res = await fetch("API_BASE_URL/api/auth/register", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({ name, email, password, role })
